@@ -1,2 +1,6 @@
 # Hexagons
 A projection of orderly, colorful hexagons that converts a blank wall into an exciting, interactive experience.
+
+This project utilizes an optical flow algorithm to allow users to use their bodies to interact with the program. A camera detects people movement in front of the projection, applying force to the hexagons. This creates a connection between the user and the wall as they can directly see their influence on the system. If no activity/movement occurs after a while, the hexagons randomly manipulate themselves to attract viewers and create something beautiful, even when no one is interacting with it. The project was shown to various audiences and also showcased at Processing Community Day during the v1.0 release of P5.js.
+
+I borrowed my optical flow algorithm from Hidetoshi Shimodaira. All other code was written by me unless otherwise commented. The program required working with multiple instances of a hexagon class I created. Forces are applied to the hexagons based on a mix of the camera data and optical flow, and the results involve moving the hexagons and changing color. The overall concept and inner-workings of the program are simple, but the implementations are very appealing and incredible to the eye, making a simple yet very successful project.
